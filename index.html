@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación de Aulas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>LAURA CHAVARRIA<br>DANIELA SEGURO<br>Asignación de Aulas</h1>
+    <form id="formulario-aulas">
+        <h2>Agregar clase</h2>
+        <label for="nombre-clase">Nombre de la clase:</label>
+        <input type="text" id="nombre-clase" required>
+
+        <label for="hora-inicio">Hora de inicio (24h):</label>
+        <input type="time" id="hora-inicio" required>
+
+        <label for="hora-fin">Hora de fin (24h):</label>
+        <input type="time" id="hora-fin" required>
+
+        <label for="aula-disponible">Aula disponible:</label>
+        <input type="text" id="aula-disponible" required>
+
+        <button type="submit">Asignar Aula</button>
+    </form>
+
+    <h2>Clases Asignadas</h2>
+    <table id="tabla-asignaciones">
+        <thead>
+            <tr>
+                <th>Clase</th>
+                <th>Hora de Inicio</th>
+                <th>Hora de Fin</th>
+                <th>Aula</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="prueba.js"></script>
+</body>
+</html>
